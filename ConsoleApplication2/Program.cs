@@ -2,7 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Diagnostics.CodeAnalysis;
     using System.IO;
 
 
@@ -40,7 +39,7 @@
                                     continue;
                                 }
 
-                                ans.Add(word);
+                                answer.Add(word);
                                 word = string.Empty;
                             }
                         }
@@ -50,14 +49,14 @@
                             continue;
                         }
 
-                        ans.Add(word);
+                        answer.Add(word);
 
                         word = string.Empty;
                     }
                 }
             }
 
-            Console.WriteLine(ans.Count);
+            Console.WriteLine(answer.Count);
         }
     }
 }
